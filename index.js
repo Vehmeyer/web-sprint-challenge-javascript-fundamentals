@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-// Nested function can access the variable internal since this variable is declared in an outer function's scope. Closure allows inner functions to reach outside their own scope to access variables that are declared in outer function's scope.
+"Nested function can access the variable internal since this variable is declared in an outer function's scope. Closure allows inner functions to reach outside their own scope to access variables that are declared in outer function's scope."
 
 
 
@@ -62,8 +62,8 @@ const zooAnimals = [
 
   function animalNames(list){
     let displayNames = [];
-    zooAnimals.forEach(function(list){
-      return displayNames.push(`name: ${list.animal_name}, scientific: ${list.scientific_name}`);
+    zooAnimals.forEach(function(item){
+      return displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
     });
     return displayNames;
   }
@@ -155,9 +155,22 @@ function greeting(first, last){
   
 // 🦁💪 Stretch: If you haven't already, convert your array method callbacks into arrow functions - make sure you comment out this section before you submit your work 🦁💪
  
+// function animalNames(list){
+//   let displayNames = [];
+//   zooAnimals.forEach(item => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
+// }
 
+// function lowerCaseNames(list){
+//   const smallNames = list.map(item => item.animal_name.toLowerCase());
+// };  
 
+// function lowPopulationAnimals(list){
+//   const smallPopulation = list.filter(item => item.population < 5);
+// };
 
+// function USApop(list){
+//   const totalPop = list.reduce((acc, item) => { return acc + item.population }, 0);
+// };
 
 // 🐴🐴🐴 Topic 3: Prototypes 🐴🐴🐴 //
 //🐴🐴🐴 Task: You are to build a cuboid maker that can return values for a cuboid's volume or surface area. Cuboids are similar to cubes but do not have even sides. Follow the steps in order to accomplish this challenge. 🐴🐴🐴
