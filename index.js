@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// Nested function can access the variable internal since this variable is declared in an outer function's scope. Closure allows inner functions to reach outside their own scope to access variables that are declared in outer function's scope.
 
 
 
